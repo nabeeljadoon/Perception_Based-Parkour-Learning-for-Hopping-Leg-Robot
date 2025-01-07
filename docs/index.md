@@ -10,13 +10,13 @@ github: https://github.com/dfki-ric-underactuated-lab/
 
 The  [Underactuated Lab](https://robotik.dfki-bremen.de/en/research/research-facilities-labs/underactuated-lab/) at [DFKI Robotics Innovation Center](https://robotik.dfki-bremen.de/en/startpage.html) is committed to pushing the limits of our robots to achieve animal-like physical/athletic intelligence. Our lab generally hosts a bunch of exchange students with diverse backgrounds from all over Europe with a shared vision of developing athletic intelligence for underactuated robotic systems. The Summer of Underactuation 2024 event intends to highlight the scientific work of the exchange students working with the underactuated lab to everyone working at DFKI-RIC. We would like to invite you to join us on 31st July 2024 (Wednesday) from 14:00 to 17:00 in the B0.10 seminar room to enjoy (among others) quadruped locomotion in uneven terrain, real-time obstacle detection for a parkour hopping robot, monkey-like brachiation movements, humanoid state estimation, and optimal pendulum swing-up. Free pizzas will be provided for all the attendees afterwards.
 
-| Time Slot      | Presentation                                                                                    | Speakers             |
-|----------------|-------------------------------------------------------------------------------------------------|----------------------|
-| 14:00 - 14:05  | Welcome Note                                                                                    | Prof. Frank Kirchner |
-| 14:05 - 14:15  | Underactuated Lab Introduction                                                                  | Dr. Dennis Mronga, Shubham Vyas |
-| 14:15 - 15:00  | Presentations                                                                                   | Hannah Isermann, Nabeel Jadoon, Jakob Middelberg  |
-| 15:00 - 15:15  | Coffee break                                                                                    |         |
-| 15:15 - 16:00  | Presentations                                                                                   | Lasse Hohmeyer, Mani Krishna, Adriano del Rio Fernandez |
+| Time Slot      | Presentation                                   | Speakers                                                |
+|----------------|------------------------------------------------|---------------------------------------------------------|
+| 14:00 - 14:05  | Welcome Note                                   | Prof. Frank Kirchner |
+| 14:05 - 14:15  | Underactuated Lab Introduction                 | Dr. Dennis Mronga, Shubham Vyas |
+| 14:15 - 15:00  | Presentations                                  | Hannah Isermann, Nabeel Jadoon, Jakob Middelberg  |
+| 15:00 - 15:15  | Coffee break                                   |         |
+| 15:15 - 16:00  | Presentations                                  | Lasse Hohmeyer, Mani Krishna, Adriano del Rio Fernandez |
 | 16:00 - 16:30  | Demo session               |     |
 | 16:30 - 17:00  | Late Lunch                 |     |
 
@@ -26,7 +26,7 @@ The  [Underactuated Lab](https://robotik.dfki-bremen.de/en/research/research-fac
 
 In the following, you can find the proceedings from the event with the talks and abstracts.
 
-## Forword by Prof. Frank Kirchner
+## Foreword by Prof. Frank Kirchner
 
 Prof. Frank Kirchner gives a forword and explains the idea of the Underactuated Lab. 
 
