@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Shubham Vyas" />
+  <title>Summer of Underactuation 2023</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Summer of Underactuation 2023</h1>
+<p class="author">Shubham Vyas</p>
+</header>
+<div class="header_links">
+  <a href="https://github.com/dfki-ric-underactuated-lab/"><i class="fa fa-github" style="font-size:36px; padding:1em;"></i></a>
+  <!-- <a href="https://github.com/dfki-ric-underactuated-lab/"><i class="fa fa-file-pdf-o" style="font-size:36px; padding:1em;"></i></a> -->
+</div>
+<!-- <div class="video-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
+<figure>
+<img src="static/figures/summer_of_underactuation_2023.png"
+alt="Summer of Underactuation 2023 Group Photo (left to right: Shivesh Kumar, Shubham Vyas, Chi Zhang, Dennis Schlee, Lukas Rust, Vinayvivian Rodrigues, Hannah Isermann, Mihir Paygude, Franek Stark, Maximilian Albracht, Shourie Grama Srinivas, Dennis Mronga)" />
+<figcaption aria-hidden="true">Summer of Underactuation 2023 Group Photo
+(left to right: Shivesh Kumar, Shubham Vyas, Chi Zhang, Dennis Schlee,
+Lukas Rust, Vinayvivian Rodrigues, Hannah Isermann, Mihir Paygude,
+Franek Stark, Maximilian Albracht, Shourie Grama Srinivas, Dennis
+Mronga)</figcaption>
+</figure>
+<h1 id="event-summary">Event Summary</h1>
+<p>The <a
+href="https://robotik.dfki-bremen.de/en/research/research-facilities-labs/underactuated-lab/">Underactuated
+Lab</a> at <a
+href="https://robotik.dfki-bremen.de/en/startpage.html">DFKI Robotics
+Innovation Center</a> is committed to pushing the limits of our robots
+to achieve animal-like physical/athletic intelligence. Our lab generally
+hosts a group of exchange students every summer with diverse backgrounds
+from all over Europe with a shared vision of developing athletic
+intelligence for underactuated robotic systems (for example, the last
+year’s proceedings/videos can be found <a
+href="https://dfki-ric-underactuated-lab.github.io/summer_of_underactuation_2022/">here</a>).
+The Summer of Underactuation 2023 event continues this tradition from
+last year and intends to highlight the scientific work of the exchange
+students working with the underactuated lab to everyone working at
+DFKI-RIC. We would like to invite you to join us over lunchtime on
+<strong>29 September 2023 (Friday) from 12:00 to 16:00 in the B0.10
+seminar room</strong> to enjoy monkey-like brachiation movements,
+parkour with monopods, the latest insights into reinforcement learning
+for achieving dynamic movements, controllers for floating robots in
+space and in water, and understanding hybrid rovers.</p>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 71%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time Slot</th>
+<th>Title of the presentation</th>
+<th>Speaker</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>12:00 - 12:15</td>
+<td><a
+href="#underactuated-lab-introduction-by-dr-shivesh-kumar">Underactuated
+Lab Introduction</a></td>
+<td>Dr. Shivesh Kumar</td>
+</tr>
+<tr class="even">
+<td>12:15 - 12:30</td>
+<td><a
+href="#foreword-summer-of-underactuation-2023-by-shubham-vyas">Foreword:
+Summer of Underactuation 2023</a></td>
+<td>Shubham Vyas</td>
+</tr>
+<tr class="odd">
+<td>12:30 - 12:35</td>
+<td><a
+href="#reinforcement-learning-based-underactuated-control-of-double-pendulum-by-chi-zhang">Reinforcement
+Learning Based Underactuated control of double pendulum</a></td>
+<td>Chi Zhang</td>
+</tr>
+<tr class="even">
+<td>12:35 - 12:40</td>
+<td><a
+href="#analytical-inverse-kinematics-of-a-6r-u-s-parallel-kinematic-mechanism-by-vinayvivian-rodrigues">Analytical
+Inverse Kinematics of a 6R-U-S Parallel Kinematic Mechanism</a></td>
+<td>Vinayvivian Rodrigues</td>
+</tr>
+<tr class="odd">
+<td>12:40 - 12:45</td>
+<td><a
+href="#trajectory-optimization-and-stabilization-for-underactuated-auvs-by-lukas-rust">Trajectory
+Optimization and Stabilization for Underactuated AUVs</a></td>
+<td>Lukas Rust</td>
+</tr>
+<tr class="even">
+<td>12:45 - 12:50</td>
+<td><a
+href="#control-strategies-for-a-rimless-wheel-micro-rover-by-dennis-schlee">Control
+Strategies for a Rimless Wheel Micro-Rover</a></td>
+<td>Dennis Schlee</td>
+</tr>
+<tr class="odd">
+<td>12:50 - 12:55</td>
+<td><a
+href="#control-of-dynamic-parkour-motions-for-a-hopping-leg-on-a-broomstick-leg-by-maximilian-albracht">Control
+of Dynamic Parkour Motions for a Hopping Leg on a Broomstick</a></td>
+<td>Maximilian Albracht</td>
+</tr>
+<tr class="even">
+<td>12:55 - 13:00</td>
+<td><a
+href="#mechatronic-design-and-control-of-an-underactuated-3-link-brachiation-robot-by-shourie-grama-srinivas">Mechatronic
+design and control of an underactuated 3-link brachiation robot</a></td>
+<td>Shourie Grama Srinivas</td>
+</tr>
+<tr class="odd">
+<td>13:00 - 13:05</td>
+<td><a
+href="#skidy-–-a-new-tool-for-closed-form-solution-of-the-equations-of-motion-for-open-chain-robots-by-hannah-isermann">Skidy
+– a new tool for closed form solution of the equations of motion for
+open chain robots</a></td>
+<td>Hannah Isermann</td>
+</tr>
+<tr class="even">
+<td>13:05 - 13:10</td>
+<td><a
+href="#a-recursive-lie-group-formulation-for-the-second-order-time-derivatives-of-the-inverse-dynamics-of-parallel-kinematic-manipulators-by-mihir-paygude">A
+Recursive Lie-Group Formulation for the Second-Order Time Derivatives of
+the Inverse Dynamics of Parallel Kinematic Manipulators</a></td>
+<td>Mihir Paygude</td>
+</tr>
+<tr class="odd">
+<td>13:10 - 13:15</td>
+<td><a
+href="#mixed-integer-mpc-for-free-floating-platform-with-binary-thrusters-and-reaction-wheel-by-franek-stark">Mixed-Integer
+MPC for Free-floating platform with binary thrusters and reaction
+wheel</a></td>
+<td>Franek Stark</td>
+</tr>
+<tr class="even">
+<td>13:15 - 13:30</td>
+<td>Coffee Break</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13:30 - 14:00</td>
+<td>Demo Session</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>14:00 - 15:00</td>
+<td>Lunch Break and Open Discussion (Free Pizzas)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>15:00 - 16:00</td>
+<td>Poster Presentation with More Demos</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="static/figures/student_map.png"
+alt="Summer of Underactuation 2023 attracted exchange students from all over Europe!" />
+<figcaption aria-hidden="true">Summer of Underactuation 2023 attracted
+exchange students from all over Europe!</figcaption>
+</figure>
+<h1 id="event-video-proceedings">Event Video Proceedings</h1>
+<p>In the following, you can find the proceedings from the event with
+the talks and abstracts. The videos of the pitch presentations will be
+uploaded soon! Along with this, a compilation video with all the demos
+and student interviews will also be uploaded soon!</p>
+<h2
+id="underactuated-lab-introduction-by-dr.-shivesh-kumar">Underactuated
+Lab Introduction by Dr. Shivesh Kumar</h2>
+<p>This talk by Dr. Shivesh Kumar introduces the inception of the
+Underactuated Robotics lab at DFKI in 2021. This marks the beginning of
+the <em>skunkworks-style</em> lab at DFKI and its progress since then is
+presented.</p>
+<video src="static/videos/Foreword_Shivesh_Kumar.mp4" controls="controls" style="max-width: 48em;">
+</video>
+<h2
+id="foreword-summer-of-underactuation-2023-by-shubham-vyas">Foreword:
+Summer of Underactuation 2023 by Shubham Vyas</h2>
+<p>Shubham Vyas gives a foreword on the Summer of Underactuation event
+2023. The event is hosted by the underactuated lab which has been
+established at DFKI Robotics Innovation Center since 2021. This talk
+presents the roadmap and vision for the lab for the next year.</p>
+<video src="static/videos/Foreword_Shubham_Vyas.mp4" controls="controls" style="max-width: 48em;">
+</video>
+<h2
+id="reinforcement-learning-based-underactuated-control-of-double-pendulum-by-chi-zhang">Reinforcement
+Learning Based Underactuated control of double pendulum by Chi
+Zhang</h2>
+<p>Reinforcement learning-based control for robots has been a popular
+research topic in recent years. It has demonstrated potential advantages
+over traditional control methods for nonlinear systems, including
+reduced reliance on model information and improved adaptability to model
+uncertainty and changes in control objectives. The double pendulum
+system is a widely studied control scenario. With its highly nonlinear
+dynamical model and chaotic behavior, it proves to be a challenge for
+underactuated control using conventional methods. Through the
+introduction of reinforcement learning techniques, a broader range of
+control possibilities will be explored.</p>
+<p><a href="static/figures/posters/1_Chi_Pendulum.pdf">Poster</a></p>
+<video src="static/videos/1_Chi_Zhang.mp4" controls="controls" style="max-width: 48em;">
+</video>
+<h2
+id="analytical-inverse-kinematics-of-a-6r-u-s-parallel-kinematic-mechanism-by-vinayvivian-rodrigues">Analytical
+Inverse Kinematics of a 6R-U-S Parallel Kinematic Mechanism by
+Vinayvivian Rodrigues</h2>
+<p>Parallel manipulators are widely employed in industrial automation,
+capitalizing on their kinematic precision and structural rigidity
+compared to serial counterparts. Interaction between humans and
+manipulators boosts productivity and product quality, highlighting
+safety as a paramount concern. Analytical Inverse kinematic formulation
+for a 6-RUS rigid parallel kinematic formulation is developed to show
+trajectory following capability in 3D space using position control
+framework. To validate the analytical formulation, a simulation of the
+same is developed in Pybullet physics-based simulator. Furthermore, a
+simulation model of a flexible 6-legged parallel manipulator is also
+proposed to show the continuum behavior of the parallel structure.</p>
+<p><a href="static/figures/posters/2_Vinay_PKM.pdf">Poster</a></p>
+<video src="static/videos/2_Vinay_Rodrigues.mp4" controls="controls" style="max-width: 48em;">
+</video>
+<h2
+id="trajectory-optimization-and-stabilization-for-underactuated-auvs-by-lukas-rust">Trajectory
+Optimization and Stabilization for Underactuated AUVs by Lukas Rust</h2>
+<p>In underwater robotics drag and resistive forces are crucial to the
+performance of AUVs. Addressing these forces in control can decrease
+energy consumption and increase maneuverability. A Trajectory
+Optimization and Stabilization architecture is proposed for the
+underactuated DeepLeng AUV, developed during the EurEx-LUNa project. By
+adding a hydrodynamic model to the optimization problem, the planned
+trajectories exploit the hydrodynamic properties of the AUV. A time
+varying LQR based on the linearized hydrodynamic model stabilizes the
+AUV around the trajectory.</p>
+<p><a href="static/figures/posters/3_Lukas_DeepLeng.pdf">Poster</a></p>
+<video src="static/videos/3_Lukas_Rust.mp4" controls="controls" style="max-width: 48em;">
+</video>
+<h2
+id="control-strategies-for-a-rimless-wheel-micro-rover-by-dennis-schlee">Control
+Strategies for a Rimless Wheel Micro-Rover by Dennis Schlee</h2>
+<p>Rimless wheeled robots are a hybrid variant of traditionally wheeled
+and legged robots. These hybrid systems combine the benefits of both
+approaches, such as efficient power demands and good terrain
+traversability. However, the simplicity of the design of the rimless
+wheel has the disadvantage of limiting the flexibility on foot placement
+and the impacts caused on the body when navigating rigid surfaces. To
+tackle these disadvantages, a gait control system is proposed that
+pursues the minimization of the forces in these impact phases and
+therefore reduces vertical motion of the rover center body.</p>
+<p><a href="static/figures/posters/4_Dennis_Rimless.pdf">Poster</a></p>
+<video src="static/videos/4_Dennis_Schlee.mp4" controls="controls" style="max-width: 48em;">
+</video>
+<h2
+id="control-of-dynamic-parkour-motions-for-a-hopping-leg-on-a-broomstick-leg-by-maximilian-albracht">Control
+of Dynamic Parkour Motions for a Hopping Leg on a Broomstick Leg by
+Maximilian Albracht</h2>
+<p>Parkour presents a challenging environment that demands dynamic,
+robust, and precise movements from robotic systems. Traversing it with a
+one-legged hopper introduces additional challenges, such as planning
+over contacts, which necessitates a sophisticated controller. To tackle
+this, a control system is proposed, utilizing mixed integer programming
+for motion planning to determine a feasible and optimal path over an
+extended horizon. The execution of this path is achieved through a state
+machine employing a PD control scheme with feedforward torques, ensuring
+robust and accurate performance.</p>
+<p><a href="static/figures/posters/5_Max_Parkour.pdf">Poster</a></p>
+<video src="static/videos/5_Max_Albracht.mp4" controls="controls" style="max-width: 48em;">
+</video>
+<h2
+id="mechatronic-design-and-control-of-an-underactuated-3-link-brachiation-robot-by-shourie-grama-srinivas">Mechatronic
+design and control of an underactuated 3-link brachiation robot by
+Shourie Grama Srinivas</h2>
+<p>Brachiation, employed by monkeys like Gibbons, involves swinging
+between branches. ‘Fast Brachiation’ occurs during dynamic free flight
+phases. Studies focus on brachiation robots for tasks like agriculture,
+animal mimicry, and forest searches. RicMonk is a 3-link robot designed
+for Fast Brachiation. Its passive tail ensures optimal swing velocity.
+Overcoming challenges of underactuation and discontinuous motion,
+RicMonk currently achieves brachiation in both forward and backward
+directions. Contribution includes optimal design, trajectory generation,
+and stabilization for a 3-link underactuated robot.</p>
+<p><a href="static/figures/posters/6_Shourie_RicMonk.pdf">Poster</a></p>
+<video src="static/videos/6_Grama_Srinivas_Shourie.mp4" controls="controls" style="max-width: 48em;">
+</video>
+<h2
+id="skidy-a-new-tool-for-closed-form-solution-of-the-equations-of-motion-for-open-chain-robots-by-hannah-isermann">Skidy
+– a new tool for closed form solution of the equations of motion for
+open chain robots by Hannah Isermann</h2>
+<p>Imagine you are developing a robot, like a quadruped. To set up its
+controller and simulation environment, you eventually need to calculate
+its kinematics and dynamics. As these equations quickly become
+computationally expensive and have to be solved several times a second,
+efficient calculations of kinematics and inverse dynamics are
+crucial.</p>
+<p>To address these challenges, Skidy was implemented. A tool for
+symbolic closed form code generation of the equations of motion and its
+derivatives for serial and open chain robots. Skidy is easy to use, and
+can generate code in several languages, including Python, C++ and
+Julia.</p>
+<p><a href="static/figures/posters/7_Hannah_Skiddy.pdf">Poster</a></p>
+<video src="static/videos/7_Hannah_Isermann.mp4" controls="controls" style="max-width: 48em;">
+</video>
+<h2
+id="a-recursive-lie-group-formulation-for-the-second-order-time-derivatives-of-the-inverse-dynamics-of-parallel-kinematic-manipulators-by-mihir-paygude">A
+Recursive Lie-Group Formulation for the Second-Order Time Derivatives of
+the Inverse Dynamics of Parallel Kinematic Manipulators by Mihir
+Paygude</h2>
+<p>Series elastic actuators (SEA) were introduced for serial robotic
+arms. Model-based trajectory tracking control of SEAs’ which requires
+the calculation of second-order time derivatives has not been studied in
+literature yet. These derivatives provide crucial insights into the
+dynamic behavior and performance of the manipulator. To estimate the
+time derivatives, we need a computationally efficient algorithm for
+second-order time derivatives of the inverse dynamic solution. The
+special topology of PKM is utilized reusing the recursive algorithm for
+estimation of the inverse dynamics of serial robots. The algorithm takes
+into account the Lie Group formulation and all the relations within the
+framework of the manipulator, providing accurate and efficient results
+for a 6-DOF Gough Stewart platform.</p>
+<p><a href="static/figures/posters/8_Mihir_2ndOrder.pdf">Poster</a></p>
+<video src="static/videos/8_Mihir_Paygude.mp4" controls="controls" style="max-width: 48em;">
+</video>
+<h2
+id="mixed-integer-mpc-for-free-floating-platform-with-binary-thrusters-and-reaction-wheel-by-franek-stark">Mixed-Integer
+MPC for Free-floating platform with binary thrusters and reaction wheel
+by Franek Stark</h2>
+<p>Satellites, spacecraft and other floating devices equipped with
+thrusters are subject to thruster timing and activation constraints.
+Moreover, they are usually equipped with reaction wheels for more
+precise alignment, which must not saturate. Traditional control methods
+cannot take these constraints into account, making precise control
+difficult. For ESA’s Orbital Robotics and GNC Lab’s 3-DOF free-floating
+platform, equipped with binary thrusters and a reaction wheel, a
+real-time capable Mixed Integer MPC was developed. It allows optimal
+control while respecting all system constraints.</p>
+<p><a href="static/figures/posters/9_Franek_MPC.pdf">Poster</a></p>
+<video src="static/videos/9_Franek_Stark.mp4" controls="controls" style="max-width: 48em;">
+</video>
+<footer>
+  <img src="static/ulab.gif" style="width:250px">
+  <img src="static/logo.svg" style="width:250px">
+</footer>
+</body>
+</html>
